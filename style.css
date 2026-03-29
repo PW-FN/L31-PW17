@@ -1,52 +1,244 @@
-/* Foglio di stile da collegare al file index */
+:root {
+      --verde-scuro: #234b35;
+      --verde-medio: #3f7d4d;
+      --verde-chiaro: #dcead7;
+      --oro: #b18b3d;
+      --crema: #f8f5ee;
+      --testo: #243127;
+      --grigio: #6c757d;
+      --ombra: 0 18px 40px rgba(35, 75, 53, 0.08);
+      --radius: 22px;
+    }
 
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    background-color: #f4f4f4;
-}
+    body {
+      font-family: 'Inter', sans-serif;
+      color: var(--testo);
+      background: linear-gradient(180deg, #f6f3eb 0%, #ffffff 24%, #f6fbf6 100%);
+    }
 
-header {
-    background-color: green;
-    color: white;
-    text-align: center;
-    padding: 20px;
-}
+    h1, h2, h3, h4, .display-font {
+      font-family: 'Playfair Display', serif;
+    }
 
-main {
-    padding: 20px;
-}
+    .navbar {
+      backdrop-filter: blur(8px);
+      background: rgba(255, 255, 255, 0.88);
+      box-shadow: 0 8px 30px rgba(0,0,0,0.04);
+    }
 
-section {
-    background-color: white;
-    padding: 15px;
-    margin-bottom: 20px;
-    border-radius: 5px;
-}
+    .navbar-brand {
+      font-weight: 700;
+      color: var(--verde-scuro);
+      letter-spacing: 0.3px;
+      text-decoration: none;
+    }
 
-/* Titolo */
-h2 {
-    color: green;
-}
+    .navbar-brand img {
+      object-fit: contain;
+    }
 
-/*Bottone per il download del report */
-.bottone {
-    display: inline-block;
-    background-color: green;
-    color: white;
-    padding: 10px 15px;
-    text-decoration: none;
-    border-radius: 5px;
-}
+    .hero {
+      position: relative;
+      padding: 7rem 0 5rem;
+      overflow: hidden;
+      background:
+        radial-gradient(circle at top right, rgba(177,139,61,0.14), transparent 20%),
+        linear-gradient(135deg, rgba(35,75,53,0.95), rgba(63,125,77,0.88)),
+        url('https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1600&q=80') center/cover;
+      color: #fff;
+    }
 
-/*Effetto quando il mouse è sopra il bottore che cambia colore */
-.bottone:hover {
-    background-color: darkgreen;
-}
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(90deg, rgba(18,36,26,0.84), rgba(18,36,26,0.42));
+    }
 
-footer {
-    background-color: #222;
-    color: white;
-    text-align: center;
-    padding: 10px;
+    .hero .container {
+      position: relative;
+      z-index: 1;
+    }
+
+    .badge-custom {
+      background: rgba(255,255,255,0.14);
+      border: 1px solid rgba(255,255,255,0.18);
+      color: #fff;
+      border-radius: 999px;
+      padding: 0.65rem 1rem;
+      font-weight: 600;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-bottom: 1.25rem;
+    }
+
+    .hero-card {
+      background: rgba(255,255,255,0.12);
+      border: 1px solid rgba(255,255,255,0.18);
+      border-radius: var(--radius);
+      padding: 1.5rem;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 12px 30px rgba(0,0,0,0.14);
+    }
+
+    .section-title {
+      color: var(--verde-scuro);
+      font-size: clamp(2rem, 4vw, 3rem);
+      margin-bottom: 1rem;
+    }
+
+    .section-subtitle {
+      color: var(--grigio);
+      max-width: 760px;
+      margin: 0 auto;
+    }
+
+    .metric-card,
+    .value-card,
+    .timeline-card,
+    .contact-card {
+      background: #fff;
+      border-radius: var(--radius);
+      box-shadow: var(--ombra);
+      border: 1px solid rgba(35, 75, 53, 0.08);
+    }
+
+    .metric-card {
+      padding: 1.5rem;
+      height: 100%;
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .metric-card:hover,
+    .value-card:hover,
+    .timeline-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 22px 48px rgba(35, 75, 53, 0.12);
+    }
+
+    .metric-number {
+      font-size: 2.2rem;
+      font-weight: 800;
+      color: var(--verde-scuro);
+      line-height: 1;
+      margin-bottom: 0.75rem;
+    }
+
+    .icon-wrap {
+      width: 56px;
+      height: 56px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 16px;
+      background: linear-gradient(135deg, var(--verde-scuro), var(--verde-medio));
+      color: white;
+      margin-bottom: 1rem;
+      font-size: 1.4rem;
+    }
+
+    .intro-box {
+      background: linear-gradient(135deg, #ffffff, #f8fcf7);
+      border: 1px solid rgba(35, 75, 53, 0.08);
+      border-radius: 28px;
+      padding: 2rem;
+      box-shadow: var(--ombra);
+    }
+
+    .value-card {
+      padding: 1.75rem;
+      height: 100%;
+    }
+
+    .value-card h4 {
+      color: var(--verde-scuro);
+      margin-bottom: 0.75rem;
+    }
+
+    .bg-soft {
+      background: linear-gradient(180deg, #f6fbf6 0%, #edf7ed 100%);
+    }
+
+    .timeline-card {
+      padding: 1.4rem;
+      position: relative;
+      overflow: hidden;
+      height: 100%;
+    }
+
+    .timeline-year {
+      font-size: 0.92rem;
+      font-weight: 700;
+      color: var(--oro);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 0.75rem;
+    }
+
+    .download-box {
+      background: linear-gradient(135deg, var(--verde-scuro), #183324);
+      color: white;
+      border-radius: 28px;
+      padding: 2rem;
+      box-shadow: 0 20px 45px rgba(24, 51, 36, 0.22);
+    }
+
+    .btn-gold {
+      background: var(--oro);
+      color: white;
+      border: none;
+      border-radius: 999px;
+      padding: 0.9rem 1.4rem;
+      font-weight: 700;
+    }
+
+    .btn-gold:hover {
+      background: #9a7732;
+      color: white;
+    }
+
+    .contact-card {
+      padding: 2rem;
+    }
+
+    .footer {
+      background: #14241b;
+      color: rgba(255,255,255,0.82);
+      padding: 2rem 0;
+    }
+
+    .footer a {
+      color: #d8e9dd;
+      text-decoration: none;
+    }
+
+    .mini-label {
+      display: inline-block;
+      font-size: 0.78rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--oro);
+      margin-bottom: 0.85rem;
+    }
+
+    .progress {
+      height: 10px;
+      border-radius: 999px;
+      background: #e9f1ea;
+    }
+
+    .progress-bar {
+      background: linear-gradient(90deg, var(--verde-scuro), var(--verde-medio));
+      border-radius: 999px;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+section[id],    
+ header[id] {
+      scroll-margin-top: 120px;
 }

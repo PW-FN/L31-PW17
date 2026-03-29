@@ -1,33 +1,225 @@
 <!DOCTYPE html>
 <html lang="it">
-
 <head>
-    <title>Risaia del Duca - Report Sostenibilità</title>
-     <!-- Link al foglio di stile presente nella stessa cartella -->
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-4.0.0.min.js" integrity="sha256-OaVG6prZf4v69dPg6PhVattBXkcOWQB62pdZ3ORyrao=" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="chart.js" type="text/javascript"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Risaia del Duca | Report di Sostenibilità</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+  <nav class="navbar navbar-expand-lg sticky-top">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="#home">
+        <img src="Logo_Risaia_del_Duca.png" alt="Logo Risaia del Duca" width="140" height="140" class="rounded-circle border border-success-subtle bg-white p-1 shadow-sm">
+        <span>Risaia del Duca</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+          <li class="nav-item"><a class="nav-link" href="#report">Report</a></li>
+          <li class="nav-item"><a class="nav-link" href="#obiettivi">Obiettivi</a></li>
+          <li class="nav-item"><a class="nav-link" href="#download">Download PDF</a></li>
 
-    <nav class="navbar bg-body-tertiary navbar-expand-lg sticky-top">
-        <div class="container px-3 px-lg-4">
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-            <a class="navbar-brand d-flex align-items-center gap-2 fw-semibold" href="/">
-                <span class="brand-logo">
-                    <img src="Logo_Risaia_del_Duca.png" alt="Logo" />
-                </span>
-                <span>Risaia del Duca</span>
-            </a>
+  <header class="hero" id="home">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-7">
+          <div class="d-flex align-items-center flex-wrap gap-3 mb-3">
+            <span class="badge-custom mb-0"> Filiera agricola responsabile • Report sostenibilità</span>
+          </div>
+          <h1 class="display-4 fw-bold mb-3">Sostenibilità, territorio e innovazione nella <span class="text-warning">Risaia del Duca</span></h1>
+          <p class="lead text-white-50 mb-4">Risaia del Duca è un centro agro-zootecnico innovativo, dove la produzione agricola e zootecnica si integrano con la  ricerca sperimentale e la didattica</p>
+          <div class="d-flex flex-wrap gap-3">
+            <a href="#report" class="btn btn-light btn-lg rounded-pill px-4">Esplora il report</a>
+            <a href="Risaia_del_Duca_Report_Sotenibilita.pdf" class="btn btn-outline-light btn-lg rounded-pill px-4">Scarica il PDF</a>
+          </div>
+        </div>
+        <div class="col-lg-5">
+          <div class="hero-card">
+            <div class="row g-3 text-center">
+              <div class="col-6">
+                <div class="p-3 rounded-4 bg-white bg-opacity-10 border border-light border-opacity-10">
+                  <div class="fs-2 fw-bold">-18%</div>
+                  <div class="small text-white-50">Consumo idrico (anche grazie al recupero acque piovane)</div>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="p-3 rounded-4 bg-white bg-opacity-10 border border-light border-opacity-10">
+                  <div class="fs-2 fw-bold">82%</div>
+                  <div class="small text-white-50">Energia da fonti rinnovabili (biomasse e fotovoltaico)</div>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="p-3 rounded-4 bg-white bg-opacity-10 border border-light border-opacity-10">
+                  <div class="fs-2 fw-bold">100%</div>
+                  <div class="small text-white-50">Tracciabilità della filiera (nuovi sistemi informatici di tracciatura)</div>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="p-3 rounded-4 bg-white bg-opacity-10 border border-light border-opacity-10">
+                  <div class="fs-2 fw-bold">+24%</div>
+                  <div class="small text-white-50">Progetti con il territorio (hub educativo)</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
 
-    <header>
-        <h1>Risaia del Duca</h1>
-        <p>Bilancio di sostenibilità</p>
-    </header>
+  <main>
+    <section class="py-5" id="report">
+      <div class="container py-4">
+        <div class="text-center mb-5">
+          <div class="mini-label">Il report</div>
+          <h2 class="section-title">Una visione chiara del nostro impegno</h2>
+          <p class="section-subtitle">Ogni attività che svolgiamo viene perseguita promuovendo il rispetto per l’ambiente in ogni sua dimensione (acqua, terra e aria) attraverso sistemi, tecnologie e pratiche che migliorano la sostenibilità aziendale. Ci impegniamo ad attuare un’evoluzione progressiva del nostro modello di business verso un’economia a zero emissioni di gas climalteranti, in linea con gli obiettivi europei di neutralità climatica e quelli nazionali di transizione ecologica.</p>
+        </div>
+
+        <div class="intro-box">
+          <div class="row g-4 align-items-center">
+            <div class="col-lg-7">
+              <h3 class="mb-3">Obiettivi per lo sviluppo sostenibile</h3>
+              <p class="mb-3 text-secondary">L’azienda contribuisce agli SDGs 2, 3, 7, 8, 9, 12, 13 e 15, che riguardano la fame zero, l’energia pulita e accessibile, l’azione per il clima e la vita sulla terra. Questo impegno si riflette nell’adozione di pratiche che promuovono l’efficienza energetica, l’utilizzo di energie rinnovabili e la tutela delle risorse naturali e dell’ambiente.</p>
+            </div>
+            <div class="col-lg-5">
+              <div class="p-4 rounded-4 bg-soft h-100 border">
+                <h5 class="mb-3">Aree del report</h5>
+                <div class="d-flex justify-content-between mb-2"><span>Ambiente</span><strong>35%</strong></div>
+                <div class="progress mb-3"><div class="progress-bar" style="width:35%"></div></div>
+                <div class="d-flex justify-content-between mb-2"><span>Sociale</span><strong>30%</strong></div>
+                <div class="progress mb-3"><div class="progress-bar" style="width:30%"></div></div>
+                <div class="d-flex justify-content-between mb-2"><span>Governance</span><strong>20%</strong></div>
+                <div class="progress mb-3"><div class="progress-bar" style="width:20%"></div></div>
+                <div class="d-flex justify-content-between mb-2"><span>Filiera e innovazione</span><strong>15%</strong></div>
+                <div class="progress"><div class="progress-bar" style="width:15%"></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+      <section class="py-5">
+      <div class="container py-4">
+        <div class="text-center mb-5">
+          <h2 class="section-title">I valori che guidano la crescita</h2>
+        </div>
+        <div class="row g-4">
+          <div class="col-lg-4">
+            <div class="value-card">
+              <h4>Benessere animale</h4>
+              <p class="text-secondary">Monitoraggio quotidiano della salute animale tramite campioni salivari e parametri biometrici</p>
+              <ul class="text-secondary mb-0">
+                <li>Riduzione delle zoppie a un massimo di 8 casi/anno</li>
+                <li>Mantenimento delle dismetabolie sotto il 5% mensile</li>
+                <li>Miglioramento delle strutture di benessere degli animali</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="value-card">
+              <h4>Persone e comunità</h4>
+              <p class="text-secondary">Centralità delle persone, sicurezza sul lavoro, valorizzazione delle competenze e dialogo con il territorio.</p>
+              <ul class="text-secondary mb-0">
+                <li>Superamento di 24 ore annue di formazione pro capite e mantenimento di zero infortuni</li>
+                <li>Incremento della presenza di studenti e completamento della struttura ricettiva dedicata.</li>
+                <li>Eventi divulgativi a porte aperte dedicato principalmente ai bambini</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="value-card">
+              <h4>Ambiente</h4>
+              <p class="text-secondary">Trasparenza, tracciabilità, qualità del prodotto e controllo dei processi lungo tutta la catena del valore.</p>
+              <ul class="text-secondary mb-0">
+                <li>Riduzione dell’uso di fitofarmaci e diserbanti</li>
+                <li>Tutela della biodiversità</li>
+                <li>Incremento dell'autonomia energetica</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-5 bg-soft" id="obiettivi">
+      <div class="container py-4">
+        <div class="text-center mb-5">
+          <div class="mini-label">Roadmap</div>
+          <h2 class="section-title">Obiettivi e traguardi futuri</h2>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-3">
+            <div class="timeline-card">
+              <div class="timeline-year">2026</div>
+              <h5>Monitoraggio digitale dei campi</h5>
+              <p class="text-secondary mb-0">Estensione dei sistemi di raccolta dati per migliorare consumi, resa e pianificazione.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="timeline-card">
+              <div class="timeline-year">2027</div>
+              <h5>Riduzione ulteriore dei consumi</h5>
+              <p class="text-secondary mb-0">Nuove tecniche irrigue e ottimizzazione delle risorse energetiche aziendali.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="timeline-card">
+              <div class="timeline-year">2028</div>
+              <h5>Packaging più sostenibile</h5>
+              <p class="text-secondary mb-0">Incremento dei materiali riciclabili e riduzione del peso degli imballaggi.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="timeline-card">
+              <div class="timeline-year">2030</div>
+              <h5>Neutralità operativa progressiva</h5>
+              <p class="text-secondary mb-0">Percorso strutturato verso una gestione aziendale a minore intensità emissiva.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-5" id="download">
+      <div class="container py-4">
+        <div class="download-box">
+          <div class="row align-items-center g-4">
+            <div class="col-lg-8">
+              <div class="mini-label text-warning">Documento ufficiale</div>
+              <h2 class="mb-3">Scarica il report di sostenibilità</h2>
+              <p class="mb-0 text-white-50">Per maggiori dettagli ed approfondimenti, si rimanda al sito ufficiale Risaia del Duca</p>
+            </div>
+            <div class="col-lg-4 text-lg-end">
+              <a href="Risaia_del_Duca_Report_Sotenibilita.pdf" class="btn btn-gold btn-lg">Download PDF</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+      </main>
+
+  <footer class="footer">
+    <div class="container d-flex flex-column flex-lg-row justify-content-between align-items-center gap-2">
+      <div>Risaia del Duca — Project Work 17</div>
+      <div><a href="#home">Torna su</a></div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-
-</html>  
+</html>
