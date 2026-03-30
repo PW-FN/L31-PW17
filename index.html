@@ -24,13 +24,24 @@
      - imposta una larghezza massima diversa in base alla dimensione dello schermo -->
     <div class="container">
       <!-- Link del brand nella navbar:
-     - "navbar-brand" identifica il logo/nome del sito
-     - "d-flex" usa Flexbox per il layout interno
-     - "align-items-center" allinea verticalmente gli elementi al centro
-     - "gap-2" aggiunge spazio tra gli elementi (es. icona + testo)
-     - "href="#home"" crea un collegamento alla sezione "home" della pagina -->
+       "navbar-brand" identifica il logo/nome del sito
+       "d-flex" usa Flexbox per il layout interno
+       "align-items-center" allinea verticalmente gli elementi al centro
+       "gap-2" aggiunge spazio tra gli elementi (es. icona + testo)
+       "href="#home"" crea un collegamento alla sezione "home" della pagina -->
       <a class="navbar-brand d-flex align-items-center gap-2" href="#home">
+      <!-- Immagine del logo:
+       "src" indica il file dell'immagine
+       "alt" fornisce una descrizione testuale (accessibilità e SEO)
+       "width" e "height" definiscono le dimensioni dell'immagine
+       "rounded-circle" rende l'immagine circolare
+       "border" aggiunge un bordo
+       "border-success-subtle" applica un colore verde chiaro al bordo (Bootstrap)
+       "bg-white" imposta uno sfondo bianco
+       "p-1" aggiunge un piccolo padding interno
+       "shadow-sm" applica una leggera ombra -->
         <img src="Logo_Risaia_del_Duca.png" alt="Logo Risaia del Duca" width="140" height="140" class="rounded-circle border border-success-subtle bg-white p-1 shadow-sm">
+      
         <span>Risaia del Duca</span>
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
